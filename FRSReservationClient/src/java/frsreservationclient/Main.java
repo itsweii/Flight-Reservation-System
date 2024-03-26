@@ -13,10 +13,7 @@ import ejb.session.stateless.ReservedSeatSessionBeanRemote;
 import java.util.Scanner;
 import javax.ejb.EJB;
 
-/**
- *
- * @author hao
- */
+
 public class Main {
 
     @EJB
