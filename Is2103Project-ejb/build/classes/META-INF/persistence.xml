@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="Is2103Project-ejbPU" transaction-type="JTA">
+    <jta-data-source>jdbc/is2103Project</jta-data-source>
+    <class>entity.Employee</class>
+    <class>entity.AircraftType</class>
+    <class>entity.Partner</class>
+    <class>entity.CabinConfiguration</class>
+    <class>entity.AircraftConfiguration</class>
+    <class>entity.Airport</class>
+    <class>entity.FlightRoute</class>
+    <class>entity.Flight</class>
+    <class>entity.FlightSchedule</class>
+    <class>entity.FlightSchedulePlan</class>
+    <class>entity.ReservedSeat</class>
+    <class>entity.Customer</class>
+    <class>entity.CabinFee</class>
+    <class>entity.Seat</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
